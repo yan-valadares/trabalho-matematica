@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empréstimos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="div-form">
+    <form action="">
+      <div class="div-input">
+        <label for="" class="label" >Valor empréstimo</label>
+        <input type="number" class="input" id="valorEmprestimo">
+      </div>
+      <div class="div-input">
+        <label for="" class="label" >Tempo carência</label>
+        <input type="number" class="input" id="carencia"> 
+      </div>
+      <div class="div-input">
+        <label for="" class="label" >Tempo pagamento(meses)</label>
+        <input type="number" class="input" id="parcelas">
+      </div>
+      <div class="div-input">
+        <label for="" class="label" >Juros mensais(%)</label>
+        <input type="number" class="input" id="juros">
+      </div>
+      <div class="div-input">
+        <button type="submit" id="button" onclick=atribuirValoresVariaveis()>Calcular</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="titulo"><p class="textoTitulo">Tabela SAC</p></div>
+  <table >
+    <thead>
+      <tr>
+        <th>Mês
+        <th>Saldo devedor
+        <th>Amortização
+        <th>Juros
+        <th>Prestação
+    </thead>
+    <tbody id="tabelaSAC">
+    </tbody>
+  </table>
+
+  <div class="titulo"><p class="textoTitulo">Tabela Price</p></div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Mês
+        <th>Saldo devedor
+        <th>Amortização
+        <th>Juros
+        <th>Prestação
+    </thead>
+    <tbody id="tabelaPrice">
+    </tbody>
+  </table>
+
+<script src="./script.js"></script>
+</body>
+</html>

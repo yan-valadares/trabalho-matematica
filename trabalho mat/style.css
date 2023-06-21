@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #105469;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.div-form{
+  margin:50px 0;
+  width: fit-content;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-input{
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.input{
+  margin-bottom: 20px;
+}
+
+.button{
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+.label{
+  font-size: 16px;
+  color: white;
+}
+
+.titulo{
+  width: fit-content;
+  height: fit-content;
+  margin-top: 3rem;
+}
+
+.textoTitulo{
+  font-size: 2rem;
+  color: white;
+}
+
+table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #E2B842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+
